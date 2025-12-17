@@ -1,0 +1,326 @@
+.msn-navbar {
+  background-color: #004c91 !important;
+  color: #fff;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  padding: 0 !important;
+}
+
+.msn-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.msn-brand {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+
+.msn-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 0 !important;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.msn-navlink {
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  padding: 0 !important;
+}
+
+.msn-navlink.active,
+.msn-navlink:hover {
+  color: #ffd700 !important;
+}
+
+.msn-dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: inline-block;
+}
+
+.msn-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white !important;
+  min-width: 160px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  animation: dropdownFade 0.2s ease;
+  border: none !important;
+  margin-top: 0px !important;
+}
+
+.msn-dropdown::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 8px; /* Covers the gap */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.msn-dropdown-item {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: black !important;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.msn-dropdown-item:hover {
+  background: #003f73 !important;
+  color: white !important;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.msn-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.msn-user-badge {
+  background: #f1c40f;
+  color: #004c91;
+  border-radius: 16px;
+  padding: 4px 10px;
+  font-weight: 700;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.msn-logout {
+  background: #e74c3c;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.msn-logout:hover {
+  opacity: 0.9;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.logout-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.logout-modal {
+  background: #fff;
+  padding: 25px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: popIn 0.3s ease;
+  max-width: 90%;
+}
+
+.logout-text {
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.logout-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-yes {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-yes:hover {
+  background: #218838;
+}
+
+.btn-cancel:hover {
+  background: #c82333;
+}
+
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .msn-navbar {
+    height: auto;
+    min-height: 56px;
+  }
+
+  .msn-nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin-top: 10px;
+  }
+
+  .msn-navlink {
+    padding: 10px 0 !important;
+    display: block;
+    width: 100%;
+  }
+
+  .msn-dropdown {
+    width: 100%;
+  }
+
+  .dropdown-toggle {
+    padding: 10px 0 !important;
+    display: block;
+    width: 100%;
+  }
+
+  .msn-dropdown-menu {
+    position: static !important;
+    box-shadow: none !important;
+    background: rgba(0, 63, 115, 0.3) !important;
+    border-radius: 0 !important;
+    margin-left: 16px !important;
+    margin-top: 0 !important;
+  }
+
+  .msn-dropdown-item {
+    padding: 10px 15px;
+    color: #fff !important;
+  }
+
+  .msn-dropdown-item:hover {
+    background: rgba(0, 63, 115, 0.5) !important;
+  }
+
+  .msn-actions {
+    margin-left: 0;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .msn-brand {
+    font-size: 14px;
+  }
+
+  .msn-user-badge {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  .msn-logout {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .msn-brand {
+    font-size: 12px;
+  }
+
+  .msn-user-badge {
+    font-size: 9px;
+    padding: 3px 6px;
+  }
+
+  .msn-logout {
+    font-size: 11px;
+    padding: 4px 7px;
+  }
+
+  .logout-modal {
+    padding: 20px 25px;
+  }
+
+  .logout-text {
+    font-size: 15px;
+  }
+
+  .btn-yes,
+  .btn-cancel {
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+}

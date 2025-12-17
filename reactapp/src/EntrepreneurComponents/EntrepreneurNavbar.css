@@ -1,0 +1,232 @@
+.esn-navbar {
+  background-color: #004c91 !important;
+  color: #fff;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  padding: 0 !important;
+}
+
+.esn-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.esn-brand {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+}
+
+.esn-nav-list {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 0 !important;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.esn-navlink {
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0 !important;
+}
+
+.esn-navlink.active,
+.esn-navlink:hover {
+  color: #ffd700 !important;
+}
+
+.esn-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.esn-user-badge {
+  background: #f1c40f;
+  color: #004c91;
+  border-radius: 16px;
+  padding: 4px 10px;
+  font-weight: 700;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.esn-logout {
+  background: #e74c3c;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.esn-logout:hover {
+  opacity: 0.9;
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Logout Modal Styles */
+.logout-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.logout-modal {
+  background: #fff;
+  padding: 25px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation: popIn 0.3s ease;
+  max-width: 90%;
+}
+
+.logout-text {
+  font-size: 17px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.logout-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-yes {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-yes:hover {
+  background: #218838;
+}
+
+.btn-cancel:hover {
+  background: #c82333;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .esn-navbar {
+    height: auto;
+    min-height: 56px;
+  }
+
+  .esn-nav-list {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 10px;
+  }
+
+  .esn-navlink {
+    padding: 10px 0 !important;
+    display: block;
+  }
+
+  .esn-actions {
+    margin-left: 0;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .esn-brand {
+    font-size: 14px;
+  }
+
+  .esn-user-badge {
+    font-size: 10px;
+    padding: 3px 8px;
+  }
+
+  .esn-logout {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .esn-brand {
+    font-size: 12px;
+  }
+
+  .esn-user-badge {
+    font-size: 9px;
+    padding: 3px 6px;
+  }
+
+  .esn-logout {
+    font-size: 11px;
+    padding: 4px 7px;
+  }
+
+  .logout-modal {
+    padding: 20px 25px;
+  }
+
+  .logout-text {
+    font-size: 15px;
+  }
+
+  .btn-yes,
+  .btn-cancel {
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+}

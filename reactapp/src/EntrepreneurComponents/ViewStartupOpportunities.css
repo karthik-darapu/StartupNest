@@ -1,0 +1,246 @@
+.view-opportunities-page {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.search-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 250px;
+}
+
+.opportunities-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.opportunities-table th,
+.opportunities-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.opportunities-table th.sortable {
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submitted {
+    background-color: #c3e6cb;
+    color: #155724;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.loading,
+.no-data {
+    text-align: center;
+    padding: 30px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.btn-pagination {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+}
+
+
+.view-opportunities-page {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.vsp-table td:last-child button {
+    margin-bottom: 10px;
+}
+
+.vsp-table td:last-child button:last-child {
+    margin-bottom: 0;
+}
+
+/* Search bar responsive */
+@media (max-width: 768px) {
+    .vsp-search {
+        width: 100%;
+    }
+}
+
+
+.vsp-table td {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    vertical-align: middle;
+}
+
+.status-badge {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #fff;
+    display: inline-block;
+    min-width: 90px;
+    text-align: center;
+}
+
+.status-badge.submitted {
+    background-color: #007bff;
+}
+
+.status-badge.shortlisted {
+    background-color: #28a745;
+}
+
+.status-badge.rejected {
+    background-color: #dc3545;
+}
+
+
+.vsp-table td .btn-edit,
+.vsp-table td .btn-delete {
+    margin: 0 6px;
+    padding: 6px 14px;
+    min-width: 110px;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.vsp-table td .action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 90%;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.search-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 250px;
+}
+
+.opportunities-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.opportunities-table th,
+.opportunities-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.opportunities-table th.sortable {
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submitted {
+    background-color: #c3e6cb;
+    color: #155724;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.loading,
+.no-data {
+    text-align: center;
+    padding: 30px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.btn-pagination {
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+}

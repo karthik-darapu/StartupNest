@@ -1,0 +1,60 @@
+/* ReusableModal.css */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* translucent dark overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 25px 40px;
+    max-width: 500px;
+    width: 90%;
+    border-radius: 6px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+    text-align: center;
+    position: relative;
+}
+
+.modal-message {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.modal-btn {
+    padding: 8px 26px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #1890ff;
+    background: white;
+    color: #1890ff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-btn:hover {
+    background-color: #e6f7ff;
+}
+
+.modal-btn.primary {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+}
+
+.modal-btn.primary:hover {
+    background-color: #40a9ff;
+}

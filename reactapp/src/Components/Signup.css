@@ -1,0 +1,69 @@
+.bg-primary {
+  background-color: #316393 !important;
+}
+
+a.login-link-text {
+  color: #538bbf;
+  text-decoration: none;
+}
+
+a.login-link-text:hover {
+  text-decoration: underline;
+}
+
+.password-field {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.password-input-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.toggle-password:hover {
+  color: #316393;
+  /* matches your theme */
+}
+
+
+body.modal-open {
+  overflow: hidden;
+}
+
+/* auth card used by Login/Signup to avoid global .container usage */
+.auth-card {
+  max-width: 850px;
+  width: 90%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.auth-left {
+  width: 45%;
+}
+
+.auth-right {
+  width: 55%;
+}
+
+/* page wrapper to center auth card vertically */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}

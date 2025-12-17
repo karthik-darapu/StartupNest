@@ -1,0 +1,38 @@
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.vsp-loading-cell,
+.submission-loading-cell {
+    height: 200px;
+    /* can tweak */
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 !important;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #004c91;
+    /* your brand blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 0.9s linear infinite;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+

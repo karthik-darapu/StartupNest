@@ -1,0 +1,33 @@
+.custom-btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.custom-btn-primary {
+  background-color: #0066b2;
+  color: white;
+}
+
+.custom-btn-primary:hover {
+  background-color: #0055a0;
+}
+
+.custom-btn-primary:active {
+  background-color: #004488;
+}
+
+.custom-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.custom-btn.w-100 {
+  width: 100%;
+}

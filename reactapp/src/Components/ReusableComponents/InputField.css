@@ -1,0 +1,35 @@
+.input-field-group {
+  margin-bottom: 20px;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 15px;
+  color: #333;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.custom-input::placeholder {
+  color: #999;
+  font-size: 15px;
+}
+
+.custom-input:focus {
+  border-bottom-color: #0066b2;
+}
+
+.custom-input.input-invalid {
+  border-bottom-color: #dc3545;
+}
+
+.input-error-message {
+  color: #dc3545;
+  font-size: 13px;
+  margin-top: 5px;
+}
+

@@ -1,0 +1,77 @@
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+.bg-primary {
+  background-color: #316393 !important;
+}
+
+.password-field {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.password-input-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.2rem;
+}
+
+
+.login-link-text a {
+  color: #316393;
+  text-decoration: none;
+}
+
+.is-invalid {
+  border-color: #dc3545 !important;
+}
+
+.invalid-feedback {
+  display: block;
+  color: #dc3545;
+  font-size: 0.875rem;
+}
+
+
+.login-link-text a:hover {
+  text-decoration: underline;
+}
+
+.auth-card {
+  max-width: 850px;
+  width: 90%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.auth-left {
+  width: 45%;
+}
+
+.auth-right {
+  width: 55%;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+  padding: 20px 0;
+}
