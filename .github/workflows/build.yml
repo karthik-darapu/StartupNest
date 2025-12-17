@@ -16,13 +16,7 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        env:
-          GITHUB_TOKEN: >-
-            c7c7832f-2d54-4abe-a2f0-ced765b47121-b97426ca-4bfe-4041-bac7-9cfcc472cc8e
-          SONAR_TOKEN: sqa_bca47d55147cb1b256a213a17c135dfe863be411
-          SONAR_HOST_URL: 'https://sonar.server.examly.io'
+     
       - name: Trigger API
         if: always()
         env:
